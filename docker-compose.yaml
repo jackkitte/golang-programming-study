@@ -1,0 +1,15 @@
+version: "3.1"
+
+services:
+    db:
+        image: postgres
+        container_name: postgres-container
+        restart: always
+        ports:
+            - "5432:5432"
+        environment:
+            - POSTGRES_USER=tamash
+            - POSTGRES_PASSWORD=mypassword
+            - PGPASSWORD=mypassword
+            - POSTGRES_DB=tamash-db
+            - DATABASE_HOST=localhost
