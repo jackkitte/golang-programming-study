@@ -1,5 +1,5 @@
 drop database gwp;
-create database gwp;
+create database crud_db;
 drop user gwp;
-create user gwp with password 'gwp';
-grant all privileges on database gwp to gwp;
+create user tamash with password 'mypassword';
+grant all privileges on database crud_db to tamash;
